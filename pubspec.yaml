@@ -1,0 +1,36 @@
+name: smart_beach_guard
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  provider: ^6.1.5+1
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  video_player: ^2.9.2
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.5.0
+  camera: ^0.12.2
+  http: ^1.6.0
+  audioplayers: ^6.8.1
+  geolocator: ^14.1.2
+  google_maps_flutter: ^2.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/Shark.png
+    - assets/videos/Beach.mp4
+    - assets/sounds/alarm.wav

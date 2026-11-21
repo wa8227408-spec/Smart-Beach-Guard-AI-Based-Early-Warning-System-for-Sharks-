@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1044381347966",
+    "firebase_url": "https://smart-beach-guard-default-rtdb.firebaseio.com",
+    "project_id": "smart-beach-guard",
+    "storage_bucket": "smart-beach-guard.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044381347966:android:a694b10f8aedb14bfe282f",
+        "android_client_info": {
+          "package_name": "com.example.smart_beach_guard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044381347966-ksd0fp5mi7injjj4amoj3oqu8osd4rhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV3j6Os4zChAefWrfJ1SeLAoIDim7I7Rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044381347966-ksd0fp5mi7injjj4amoj3oqu8osd4rhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
