@@ -44,7 +44,6 @@ class AlertProvider extends ChangeNotifier {
           };
         }).toList();
 
-        // Sort alerts by creation date
         _alerts.sort((a, b) {
           final dateA = a['createdAt'] as Timestamp?;
           final dateB = b['createdAt'] as Timestamp?;
@@ -72,7 +71,6 @@ class AlertProvider extends ChangeNotifier {
     );
   }
 
-  // Stop listening
   void stopListening() {
     _subscription?.cancel();
     _subscription = null;

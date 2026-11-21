@@ -103,7 +103,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 30),
 
-                  // Full Name Field
                   CustomTextField(
                     controller: _nameController,
                     hintText: 'Full Name',
@@ -111,7 +110,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 16),
 
-                  // Email Field
                   CustomTextField(
                     controller: _emailController,
                     hintText: 'Email Address',
@@ -120,7 +118,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 16),
 
-                  // Password Field
                   CustomTextField(
                     controller: _passwordController,
                     hintText: 'Password',
@@ -163,7 +160,6 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(height: 24),
 
-                  // Signup Button
                   CustomAuthButton(
                     text: 'Sign Up',
                     isLoading: _isLoading,

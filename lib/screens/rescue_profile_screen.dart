@@ -34,7 +34,6 @@ class _RescueProfileScreenState extends State<RescueProfileScreen> {
     });
   }
 
-  // Load profile using AuthProvider
   Future<void> _loadProfile() async {
     final authProvider = context.read<AuthProvider>();
 
@@ -71,7 +70,6 @@ class _RescueProfileScreenState extends State<RescueProfileScreen> {
     }
   }
 
-  // Save profile using AuthProvider
   Future<void> _saveProfile() async {
     setState(() {
       _isSaving = true;
@@ -114,7 +112,6 @@ class _RescueProfileScreenState extends State<RescueProfileScreen> {
     }
   }
 
-  // Build profile fields
   Widget _buildProfileField({
     required String label,
     required IconData icon,

@@ -273,7 +273,6 @@ class _VisitorHomeScreenState extends State<VisitorHomeScreen> {
     );
   }
 
-  // Provider Alerts Section
   Widget _buildAlertsSection(BuildContext context) {
     final alertProvider = context.watch<AlertProvider>();
 
@@ -316,7 +315,6 @@ class _VisitorHomeScreenState extends State<VisitorHomeScreen> {
     );
   }
 
-  // Alert Card
   Widget _buildAlertCard(
       BuildContext context,
       Map<String, dynamic> alert,
@@ -496,7 +494,6 @@ class _VisitorHomeScreenState extends State<VisitorHomeScreen> {
     );
   }
 
-  // Safety Tip
   Widget _buildSafetyTip(IconData icon, String text) {
     return Container(
       margin: const EdgeInsets.only(bottom: 12),

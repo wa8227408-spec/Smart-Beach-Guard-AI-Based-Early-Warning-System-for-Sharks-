@@ -224,7 +224,6 @@ class _VisitorProfileScreenState extends State<VisitorProfileScreen> {
 
             const SizedBox(height: 30),
 
-            // Full Name
             _buildProfileField(
               label: 'Full Name',
               icon: Icons.person_outline,
@@ -233,7 +232,6 @@ class _VisitorProfileScreenState extends State<VisitorProfileScreen> {
 
             const SizedBox(height: 18),
 
-            // Email
             _buildReadOnlyField(
               label: 'Email Address',
               icon: Icons.email_outlined,
@@ -242,7 +240,6 @@ class _VisitorProfileScreenState extends State<VisitorProfileScreen> {
 
             const SizedBox(height: 18),
 
-            // Phone Number
             _buildProfileField(
               label: 'Phone Number',
               icon: Icons.phone_outlined,
@@ -252,7 +249,6 @@ class _VisitorProfileScreenState extends State<VisitorProfileScreen> {
 
             const SizedBox(height: 30),
 
-            // Save Button
             if (_isEditing)
               SizedBox(
                 width: double.infinity,
@@ -292,7 +288,6 @@ class _VisitorProfileScreenState extends State<VisitorProfileScreen> {
     );
   }
 
-  // Editable Profile Field
   Widget _buildProfileField({
     required String label,
     required IconData icon,
@@ -338,7 +333,6 @@ class _VisitorProfileScreenState extends State<VisitorProfileScreen> {
     );
   }
 
-  // Read Only Field
   Widget _buildReadOnlyField({
     required String label,
     required IconData icon,

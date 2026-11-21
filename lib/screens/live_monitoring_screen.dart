@@ -63,7 +63,6 @@ class _LiveMonitoringScreenState
     });
   }
 
-  // Initialize rear camera
   Future<void> _initializeCamera() async {
     try {
       final cameras = await availableCameras();
@@ -111,7 +110,6 @@ class _LiveMonitoringScreenState
     }
   }
 
-  // Capture and send image to AI
   Future<void> _analyzeFrame() async {
     final monitoringProvider = _monitoringProvider;
 
