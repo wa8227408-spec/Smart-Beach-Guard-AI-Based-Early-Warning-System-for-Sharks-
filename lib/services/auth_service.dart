@@ -8,10 +8,8 @@ class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  // Get currently logged-in user
   User? get currentUser => _auth.currentUser;
 
-  // Sign Up
   Future<UserModel?> signUpWithEmailAndPassword({
     required String email,
     required String password,
@@ -49,7 +47,6 @@ class AuthService {
     return null;
   }
 
-  // Sign In
   Future<UserModel?> signInWithEmailAndPassword({
     required String email,
     required String password,
@@ -80,7 +77,6 @@ class AuthService {
     return null;
   }
 
-  // Get current user's profile from Firestore
   Future<UserModel?> getUserProfile() async {
     final user = currentUser;
 
@@ -98,7 +94,6 @@ class AuthService {
     return UserModel.fromMap(doc.data()!);
   }
 
-  // Update current user's profile
   Future<void> updateUserProfile({
     required String fullName,
     required String teamId,
@@ -122,7 +117,6 @@ class AuthService {
     });
   }
 
-  // Sign Out
   Future<void> signOut() async {
     await _auth.signOut();
   }

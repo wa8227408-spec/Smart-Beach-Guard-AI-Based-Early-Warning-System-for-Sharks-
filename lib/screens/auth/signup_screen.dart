@@ -17,7 +17,7 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _passwordController = TextEditingController();
   final AuthService _authService = AuthService();
 
-  String _selectedRole = 'visitor'; // Default role
+  String _selectedRole = 'visitor';
   bool _isLoading = false;
 
   void _signup() async {
@@ -44,7 +44,7 @@ class _SignupScreenState extends State<SignupScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Account created successfully!')),
         );
-        Navigator.pop(context); // Return to login screen
+        Navigator.pop(context);
       }
     } catch (e) {
       if (mounted) {

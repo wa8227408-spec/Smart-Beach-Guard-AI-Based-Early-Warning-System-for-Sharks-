@@ -145,7 +145,6 @@ class _RescueProfileScreenState extends State<RescueProfileScreen> {
     );
   }
 
-  // Cancel editing and restore original values
   void _cancelEditing() {
     if (_user == null) return;
 

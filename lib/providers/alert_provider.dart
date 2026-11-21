@@ -13,21 +13,18 @@ class AlertProvider extends ChangeNotifier {
   bool _isLoading = true;
   String? _errorMessage;
 
-  // Getters
   List<Map<String, dynamic>> get alerts => _alerts;
 
   bool get isLoading => _isLoading;
 
   String? get errorMessage => _errorMessage;
 
-  // Get active alerts only
   List<Map<String, dynamic>> get activeAlerts {
     return _alerts
         .where((alert) => alert['status'] == 'active')
         .toList();
   }
 
-  // Start listening to Firebase alerts
   void startListening() {
     if (_subscription != null) return;
 

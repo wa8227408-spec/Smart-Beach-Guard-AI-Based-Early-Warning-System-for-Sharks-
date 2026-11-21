@@ -448,7 +448,6 @@ class _VisitorHomeScreenState extends State<VisitorHomeScreen> {
     );
   }
 
-  // Empty / Error Message Card
   Widget _buildMessageCard({
     required IconData icon,
     required String title,

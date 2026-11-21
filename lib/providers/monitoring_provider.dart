@@ -55,7 +55,6 @@ class MonitoringProvider extends ChangeNotifier {
       _consecutiveShark = 0;
     }
 
-    // Confirm shark only after two consecutive detections.
     _isSharkDetected = _consecutiveShark >= 2;
 
     notifyListeners();

@@ -7,7 +7,6 @@ class AlarmService {
   bool _isPlaying = false;
   bool _isDisposed = false;
 
-  // Start alarm
   Future<void> playAlarm() async {
     if (_isPlaying || _isDisposed) return;
 
@@ -25,7 +24,6 @@ class AlarmService {
     }
   }
 
-  // Stop alarm
   Future<void> stopAlarm() async {
     if (_isDisposed || !_isPlaying) return;
 
@@ -37,10 +35,8 @@ class AlarmService {
     }
   }
 
-  // Check alarm status
   bool get isPlaying => _isPlaying;
 
-  // Dispose audio player
   Future<void> dispose() async {
     if (_isDisposed) return;
 

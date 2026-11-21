@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'auth/login_screen.dart'; // استيراد صفحة تسجيل الدخول للانتقال اليها
+import 'auth/login_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
